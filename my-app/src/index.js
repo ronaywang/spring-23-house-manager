@@ -8,7 +8,9 @@ import { ThemeProvider, CssBaseline } from "@mui/material";
 
 var Airtable = require("airtable");
 //create a new Airtable object in React
-new Airtable({ apiKey: "keyWXBX6EWJI83bal" }).base("appxk50hiFHmnhcsi");
+var base = new Airtable({ apiKey: "keyWXBX6EWJI83bal" }).base(
+  "appxk50hiFHmnhcsi"
+);
 //base endpoint to call with each request
 axios.defaults.baseURL =
   "https://api.airtable.com/v0/appxk50hiFHmnhcsi/Tracker/";

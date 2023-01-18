@@ -8,11 +8,11 @@ export default function MenuBar() {
         <Grid>
           <Grid item xs={2}>
             <a className="logo" href="/">
-              WILG Scoreboard
+              WILG Leaderboard
             </a>
           </Grid>
-          <Grid item xs={6}>
-            <div float="right" a href="">
+          <Grid item xs={2}>
+            <div a href="">
               <h4>Checkoffs</h4>
             </div>
           </Grid>
