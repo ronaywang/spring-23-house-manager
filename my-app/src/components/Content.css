@@ -1,0 +1,58 @@
+.Grid {
+    border:1;
+}
+
+.content-wrapper {
+    padding-top: 100px;
+}
+
+.claim {
+    right: 10px;
+    color: white;
+    font-weight: 1000;
+}
+
+.add {
+    right: 10px;
+    color: white;
+}
+
+.bounty {
+    font-size: 1.4vw;
+    font-weight: 500;
+    justify-content: left;
+    margin-top: 50px;
+}
+
+.location {
+    font-weight: 500;
+    font-size: 2.2vw;
+    margin:0px 10px 0px 10px;
+    width: 25vw;
+
+}
+
+.describe {
+    left: 2px;
+    font-size:1vw;
+    padding-top:1px;
+    justify-content: left;
+}
+
+.post {
+    margin: 30px 0px 30px 0px;
+    transition-duration: .75s;
+    padding: 10px 10px 10px 10px;
+}
+
+img { display: inline-table; margin: .33em; width: 100%; height: auto; }
+div {
+    display: inline-block;
+  }
+  div > img {
+    display: inline-block;
+  }
+.table-head {
+    font-size: 2.8vw;
+
+}
