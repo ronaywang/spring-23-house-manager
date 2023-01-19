@@ -13,6 +13,7 @@ import {
   Button,
 } from "@mui/material";
 //import useData from "./useData";
+import Background from "./nycbackgroundwithbunnies.svg";
 
 const PostTable = ({ data }) => {
   const fields = data.map((el) => {
@@ -28,9 +29,9 @@ const PostTable = ({ data }) => {
           <TableCell>House Jobs</TableCell>
           <TableCell>Kitchen Jobs</TableCell>
           <TableCell>Bathroom Jobs</TableCell>
-          <TableCell>Work Day Hours</TableCell>
-          <TableCell>Makeup Hours</TableCell>
-          <TableCell>Projected Fines</TableCell>
+          <TableCell>Work Day Hrs</TableCell>
+          <TableCell>Makeup Hrs</TableCell>
+          <TableCell>Current Fines</TableCell>
         </TableRow>
       </TableHead>
       <TableBody className="fullWidth">

@@ -18,8 +18,8 @@ export default function MenuBar() {
                 <h4>Checkoffs</h4>
               </a>
             </Button>
-            <Button variant="text" size="small" float="right">
-              <a href=" https://airtable.com/shr86g6yJ6qQsOEoI">
+            <Button variant="text" size="small">
+              <a href="">
                 <h4>Request Supplies</h4>
               </a>
             </Button>

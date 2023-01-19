@@ -16,6 +16,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PriorityHighIcon from "@mui/icons-material/PriorityHigh";
 import useData from "./useData";
 import PostTable from "./table";
+import Background from "./nycbackgroundwithbunnies.svg";
 
 const Content = () => {
   const { data, getData } = useData();
@@ -26,7 +27,16 @@ const Content = () => {
     onPageLoad();
   }, []);
   return (
-    <div className="content-wrapper">{data && <PostTable data={data} />}</div>
+    <div
+      className="bunnies"
+      style={{
+        backgroundImage: `url(${Background})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
+    >
+      <div className="content-wrapper">{data && <PostTable data={data} />}</div>
+    </div>
   );
 };
 
