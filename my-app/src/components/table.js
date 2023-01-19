@@ -1,10 +1,13 @@
 import React from "react";
 import {
+  Paper,
   Table,
   TableHead,
   TableBody,
   TableRow,
   TableCell,
+  LinearProgress,
+  TableContainer,
   Box,
   Typography,
   Button,
@@ -22,10 +25,10 @@ const PostTable = ({ data }) => {
         {" "}
         <TableRow>
           <TableCell>Name</TableCell>
-          <TableCell>House Jobs Remaining</TableCell>
-          <TableCell>Kitchen Jobs Remaining</TableCell>
-          <TableCell>Bathroom Jobs Remaining</TableCell>
-          <TableCell>Work Day Hours Remaining</TableCell>
+          <TableCell>House Jobs</TableCell>
+          <TableCell>Kitchen Jobs</TableCell>
+          <TableCell>Bathroom Jobs</TableCell>
+          <TableCell>Work Day Hours</TableCell>
           <TableCell>Makeup Hours</TableCell>
           <TableCell>Projected Fines</TableCell>
         </TableRow>
@@ -38,16 +41,28 @@ const PostTable = ({ data }) => {
                 {el.fields.Name}
               </TableCell>
               <TableCell className="key__cell">
-                {14 - el.fields.HouseJobs}
+                <LinearProgress
+                  variant="determinate"
+                  value={(el.fields.HouseJobs / 14) * 100}
+                />
               </TableCell>
               <TableCell className="key__cell">
-                {14 - el.fields.KitchenJobs}
+                <LinearProgress
+                  variant="determinate"
+                  value={(el.fields.KitchenJobs / 14) * 100}
+                />
               </TableCell>
               <TableCell className="key__cell colorKey__layers">
-                {4 - el.fields.BathroomJobs}
+                <LinearProgress
+                  variant="determinate"
+                  value={(el.fields.BathroomJobs / 4) * 100}
+                />
               </TableCell>
               <TableCell className="key__cell">
-                {8 - el.fields.WorkDay}
+                <LinearProgress
+                  variant="determinate"
+                  value={(el.fields.WorkDay / 8) * 100}
+                />
               </TableCell>
 
               <TableCell className="key__cell">
