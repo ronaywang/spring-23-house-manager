@@ -8,19 +8,19 @@ export default function MenuBar() {
       <div className="nav-wrapper">
         <AppBar color="inherit">
           <Toolbar>
-            <Button variant="text" size="small">
-              <a className="logo" href="/">
-                WILG Leaderboard
+            <Button variant="text" size="small" style={{ marginRight: 16 }}>
+              <a href="">
+                <h2>WILG Leaderboard</h2>
               </a>
             </Button>
-            <Button variant="text" size="small">
-              <div a href="">
+            <Button variant="text" size="small" style={{ marginRight: 16 }}>
+              <a href="">
                 <h4>Checkoffs</h4>
-              </div>
+              </a>
             </Button>
-            <Button variant="text" size="small">
+            <Button variant="text" size="small" float="right">
               <a href=" https://airtable.com/shr86g6yJ6qQsOEoI">
-                Request Supplies
+                <h4>Request Supplies</h4>
               </a>
             </Button>
           </Toolbar>

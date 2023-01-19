@@ -1,6 +1,4 @@
-.Grid {
-    border:1;
-}
+
 
 .content-wrapper {
     padding-top: 100px;
@@ -11,17 +9,6 @@
 
 
 
-.add {
-    right: 10px;
-    color: white;
-}
-
-.bounty {
-    font-size: 1.4vw;
-    font-weight: 500;
-    justify-content: left;
-    margin-top: 50px;
-}
 
 .location {
     font-weight: 500;
