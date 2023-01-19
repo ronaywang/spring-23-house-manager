@@ -45,24 +45,28 @@ const PostTable = ({ data }) => {
                   variant="determinate"
                   value={(el.fields.HouseJobs / 14) * 100}
                 />
+                {el.fields.HouseJobs} / 14
               </TableCell>
               <TableCell className="key__cell">
                 <LinearProgress
                   variant="determinate"
                   value={(el.fields.KitchenJobs / 14) * 100}
                 />
+                {el.fields.KitchenJobs} / 14
               </TableCell>
               <TableCell className="key__cell colorKey__layers">
                 <LinearProgress
                   variant="determinate"
                   value={(el.fields.BathroomJobs / 4) * 100}
                 />
+                {el.fields.BathroomJobs} / 4
               </TableCell>
               <TableCell className="key__cell">
                 <LinearProgress
                   variant="determinate"
                   value={(el.fields.WorkDay / 8) * 100}
                 />
+                {el.fields.WorkDay} / 8
               </TableCell>
 
               <TableCell className="key__cell">

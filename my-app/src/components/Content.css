@@ -4,13 +4,12 @@
 
 .content-wrapper {
     padding-top: 100px;
+
+    margin: auto;
+    width: 100%;
 }
 
-.claim {
-    right: 10px;
-    color: white;
-    font-weight: 1000;
-}
+
 
 .add {
     right: 10px;
@@ -54,5 +53,7 @@ div {
   }
 .table-head {
     font-size: 2.8vw;
+
+    padding: 10px  10px;
 
 }
