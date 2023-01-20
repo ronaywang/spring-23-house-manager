@@ -13,7 +13,7 @@ import {
   Button,
 } from "@mui/material";
 //import useData from "./useData";
-import Background from "./nycbackgroundwithbunnies.svg";
+
 
 const PostTable = ({ data }) => {
   const fields = data.map((el) => {
