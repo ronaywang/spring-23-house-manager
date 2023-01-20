@@ -18,9 +18,10 @@ const SimpleAccordian = ({ data }) => {
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
+              style={{ display: "flex" }}
             >
-              <Typography sx={{}}>{el.fields.Job}</Typography>
-              <Typography sx={{ color: "text.secondary" }}>
+              <Typography sx={{ flexShrink: 0 }}>{el.fields.Job}</Typography>
+              <Typography sx={{ color: "text.secondary", marginLeft: "auto" }}>
                 {el.fields.Select}
               </Typography>
             </AccordionSummary>
