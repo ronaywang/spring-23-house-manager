@@ -24,10 +24,15 @@ export default function MenuBar() {
                 <h4>Job Descriptions</h4>
               </Link>
             </Button>
-            <Button variant="text" size="small">
+            <Button variant="text" size="small" style={{ marginRight: 16 }}>
               <Link to="">
                 <h4>Request Supplies</h4>
               </Link>
+            </Button>
+            <Button variant="text" size="small">
+              <a href="https://docs.google.com/spreadsheets/d/19k7-uypnHk25MnwEV_-Wq6aTaJlWNSxiUCcepvUzmH4/edit#gid=1527960718">
+                <h4>Temporary Jobs</h4>
+              </a>
             </Button>
           </Toolbar>
         </AppBar>
