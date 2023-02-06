@@ -9,7 +9,7 @@ export default function MenuBar() {
   return (
     <nav className="header">
       <div className="nav-wrapper">
-        <AppBar color="inherit">
+        <AppBar color="inherit" style={{ marginBottom: 16 }}>
           <Toolbar>
             <Button variant="text" size="small" style={{ marginRight: 16 }}>
               <Link to="">
