@@ -27,17 +27,8 @@ const Descriptions = () => {
     onPageLoad();
   }, []);
   return (
-    <div
-      className="bunnies"
-      style={{
-        backgroundImage: `url(${Background})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-      }}
-    >
-      <div className="content-wrapper">
-        {data && <SimpleAccordian data={data} />}
-      </div>
+    <div className="content-wrapper">
+      {data && <SimpleAccordian data={data} />}
     </div>
   );
 };
