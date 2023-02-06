@@ -14,19 +14,10 @@ export default function MenuBar() {
                 <h2>WILG Leaderboard</h2>
               </Link>
             </Button>
-            <Button variant="text" size="small" style={{ marginRight: 16 }}>
-              <Link to="">
-                <h4>Checkoffs</h4>
-              </Link>
-            </Button>
+
             <Button variant="text" size="small" style={{ marginRight: 16 }}>
               <Link to="/descriptions">
                 <h4>Job Descriptions</h4>
-              </Link>
-            </Button>
-            <Button variant="text" size="small" style={{ marginRight: 16 }}>
-              <Link to="">
-                <h4>Request Supplies</h4>
               </Link>
             </Button>
             <Button variant="text" size="small">
