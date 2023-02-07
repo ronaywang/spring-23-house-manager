@@ -75,13 +75,15 @@ const PostTable = ({ data }) => {
               <TableCell className="key__cell">
                 $
                 {15 *
-                  (14 -
+                  (
+                    14 -
                     el.fields.KitchenJobs +
                     4 -
                     el.fields.BathroomJobs +
                     14 -
                     el.fields.HouseJobs +
-                    el.fields.MakeupHours)}
+                    el.fields.MakeupHours
+                  ).toFixed(2)}
               </TableCell>
             </TableRow>
           );
