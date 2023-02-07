@@ -14,7 +14,6 @@ import {
 } from "@mui/material";
 //import useData from "./useData";
 
-
 const PostTable = ({ data }) => {
   const fields = data.map((el) => {
     return el.fields;
@@ -37,7 +36,7 @@ const PostTable = ({ data }) => {
       <TableBody className="fullWidth">
         {data.map((el) => {
           return (
-            <TableRow key={el.fields.Name} className="key__row">
+            <TableRow key={el.fields.Ranking} className="key__row">
               <TableCell backgroundOrigin="content-box">
                 {el.fields.Name}
               </TableCell>
