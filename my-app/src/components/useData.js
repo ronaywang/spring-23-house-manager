@@ -10,7 +10,7 @@ export default function useData() {
   const getData = async () => {
     return base("Tracker")
       .select({
-        sort: [{ field: "Ranking", direction: "asc" }],
+        sort: [{ field: "Ranking", direction: "desc" }],
         pageSize: 100,
       })
       .firstPage(function (err, records) {
