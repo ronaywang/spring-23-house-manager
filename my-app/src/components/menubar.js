@@ -43,7 +43,7 @@ export default function MenuBar() {
               </a>
             </Button>
             <Button variant="text" size="small" style={{ marginRight: 16 }}>
-              <a href="https://airtable.com/shrzKhkThkd2zO9NF">
+              <a href="https://airtable.com/shrDCpzEMr5HKyBYW">
                 <h4>Makeup Checkoff</h4>
               </a>
             </Button>
