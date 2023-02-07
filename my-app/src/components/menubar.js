@@ -27,9 +27,14 @@ export default function MenuBar() {
                 <h4>Temporary Jobs</h4>
               </a>
             </Button>
-            <Button variant="text" size="small">
+            <Button variant="text" size="small" style={{ marginRight: 16 }}>
               <a href="https://airtable.com/shrZPPLW0wxlm9uvA">
                 <h4>Preference Form</h4>
+              </a>
+            </Button>
+            <Button variant="text" size="small" style={{ marginRight: 16 }}>
+              <a href="https://airtable.com/shr5s7HXraqZt8pj3">
+                <h4>Kitchen Checkoff</h4>
               </a>
             </Button>
           </Toolbar>
