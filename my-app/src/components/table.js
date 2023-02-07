@@ -79,8 +79,6 @@ const PostTable = ({ data }) => {
                     el.fields.KitchenJobs +
                     4 -
                     el.fields.BathroomJobs +
-                    8 -
-                    el.fields.WorkDay +
                     14 -
                     el.fields.HouseJobs +
                     el.fields.MakeupHours)}
