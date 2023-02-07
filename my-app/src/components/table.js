@@ -61,9 +61,7 @@ const PostTable = ({ data }) => {
                 {el.fields.BathroomJobs} / 4
               </TableCell>
 
-              <TableCell className="key__cell">
-                {el.fields.MakeupHours}
-              </TableCell>
+              <TableCell className="key__cell">{el.fields.FallHrs}</TableCell>
               <TableCell className="key__cell">
                 $
                 {(
@@ -74,7 +72,7 @@ const PostTable = ({ data }) => {
                     el.fields.BathroomJobs +
                     14 -
                     el.fields.HouseJobs +
-                    el.fields.MakeupHours)
+                    el.fields.FallHrs)
                 ).toFixed(2)}
               </TableCell>
             </TableRow>
