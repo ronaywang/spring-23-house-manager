@@ -42,6 +42,11 @@ export default function MenuBar() {
                 <h4>House Checkoff</h4>
               </a>
             </Button>
+            <Button variant="text" size="small" style={{ marginRight: 16 }}>
+              <a href="https://airtable.com/shrzKhkThkd2zO9NF">
+                <h4>Makeup Checkoff</h4>
+              </a>
+            </Button>
           </Toolbar>
         </AppBar>
       </div>
