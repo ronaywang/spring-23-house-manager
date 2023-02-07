@@ -74,16 +74,16 @@ const PostTable = ({ data }) => {
               </TableCell>
               <TableCell className="key__cell">
                 $
-                {15 *
-                  (
-                    14 -
+                {(
+                  15 *
+                  (14 -
                     el.fields.KitchenJobs +
                     4 -
                     el.fields.BathroomJobs +
                     14 -
                     el.fields.HouseJobs +
-                    el.fields.MakeupHours
-                  ).toFixed(2)}
+                    el.fields.MakeupHours)
+                ).toFixed(2)}
               </TableCell>
             </TableRow>
           );
