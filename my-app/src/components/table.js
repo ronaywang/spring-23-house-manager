@@ -29,7 +29,7 @@ const PostTable = ({ data }) => {
           <TableCell>Kitchen Jobs</TableCell>
           <TableCell>Bathroom Jobs</TableCell>
           <TableCell>Work Day Hrs</TableCell>
-          <TableCell>Makeup Hrs</TableCell>
+          <TableCell>Hrs Owed</TableCell>
           <TableCell>Current Fines</TableCell>
         </TableRow>
       </TableHead>
