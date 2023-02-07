@@ -28,7 +28,6 @@ const PostTable = ({ data }) => {
           <TableCell>House Jobs</TableCell>
           <TableCell>Kitchen Jobs</TableCell>
           <TableCell>Bathroom Jobs</TableCell>
-          <TableCell>Work Day Hrs</TableCell>
           <TableCell>Hrs Owed</TableCell>
           <TableCell>Current Fines</TableCell>
         </TableRow>
@@ -60,13 +59,6 @@ const PostTable = ({ data }) => {
                   value={(el.fields.BathroomJobs / 4) * 100}
                 />
                 {el.fields.BathroomJobs} / 4
-              </TableCell>
-              <TableCell className="key__cell">
-                <LinearProgress
-                  variant="determinate"
-                  value={(el.fields.WorkDay / 8) * 100}
-                />
-                {el.fields.WorkDay} / 8
               </TableCell>
 
               <TableCell className="key__cell">
