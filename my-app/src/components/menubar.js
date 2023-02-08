@@ -71,6 +71,9 @@ export default function MenuBar() {
                   <a href="https://airtable.com/shrzKhkThkd2zO9NF">House</a>
                 </MenuItem>
                 <MenuItem onClick={handleClose}>
+                  <a href="https://airtable.com/shrFlmTxn5dHMFnDx">Bathroom</a>
+                </MenuItem>
+                <MenuItem onClick={handleClose}>
                   <a href="https://airtable.com/shrDCpzEMr5HKyBYW">Makeup</a>
                 </MenuItem>
               </Menu>
