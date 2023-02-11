@@ -27,20 +27,17 @@ const PostTable2 = ({ data }) => {
           <TableCell>Name</TableCell>
           <TableCell>House Job</TableCell>
           <TableCell>Kitchen Job</TableCell>
-          <TableCell>Status</TableCell>
         </TableRow>
       </TableHead>
       <TableBody className="fullWidth">
         {data.map((el) => {
           return (
-            <TableRow key={el.fields.Name} className="key__row">
+            <TableRow className="key__row">
               <TableCell backgroundOrigin="content-box">
                 {el.fields.Name}
               </TableCell>
               <TableCell className="key__cell">{el.fields.House}</TableCell>
               <TableCell className="key__cell">{el.fields.Kitchen}</TableCell>
-
-              <TableCell className="key__cell">{el.fields.Status}</TableCell>
             </TableRow>
           );
         })}

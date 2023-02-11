@@ -8,9 +8,9 @@ export default function useData2() {
   const [data, setData] = useState(null);
 
   const getData = async () => {
-    return base("Descriptions")
+    return base("Assignments")
       .select({
-        sort: [{ field: "Job", direction: "asc" }],
+        sort: [{ field: "Name", direction: "asc" }],
         pageSize: 100,
       })
       .firstPage(function (err, records) {

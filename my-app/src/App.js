@@ -5,6 +5,7 @@ import "./App.css";
 import MenuBar from "./components/menubar";
 import Content from "./components/Content";
 import Descriptions from "./components/Descriptions";
+import Assignments from "./components/Assignment";
 import Layout from "./main";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Content />} />
           <Route path="descriptions" element={<Descriptions />} />
+          <Route path="assignments" element={<Assignments />} />
         </Route>
       </Routes>
     </BrowserRouter>

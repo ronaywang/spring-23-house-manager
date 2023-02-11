@@ -27,14 +27,7 @@ const Content = () => {
     onPageLoad();
   }, []);
   return (
-    <div
-      className="bunnies"
-      style={{
-        backgroundImage: `url(${Background})`,
-        backgroundPosition: "center",
-        backgroundSize: "cover",
-      }}
-    >
+    <div>
       <div className="content-wrapper">{data && <PostTable data={data} />}</div>
     </div>
   );

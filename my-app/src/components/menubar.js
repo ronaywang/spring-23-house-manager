@@ -38,8 +38,8 @@ export default function MenuBar() {
               </a>
             </Button>
             <Button variant="text" size="small" style={{ marginRight: 16 }}>
-              <a href="https://airtable.com/shrZPPLW0wxlm9uvA">
-                <h4>Preference Form</h4>
+              <a href="/assignments">
+                <h4>Assignments</h4>
               </a>
             </Button>
             <div>
