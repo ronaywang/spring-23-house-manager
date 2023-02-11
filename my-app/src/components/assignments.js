@@ -25,8 +25,9 @@ const PostTable2 = ({ data }) => {
         {" "}
         <TableRow>
           <TableCell>Name</TableCell>
-          <TableCell>House Job</TableCell>
           <TableCell>Kitchen Job</TableCell>
+          <TableCell>House Job</TableCell>
+          <TableCell>House Job Frequency</TableCell>
         </TableRow>
       </TableHead>
       <TableBody className="fullWidth">
@@ -36,8 +37,10 @@ const PostTable2 = ({ data }) => {
               <TableCell backgroundOrigin="content-box">
                 {el.fields.Name}
               </TableCell>
-              <TableCell className="key__cell">{el.fields.House}</TableCell>
+
               <TableCell className="key__cell">{el.fields.Kitchen}</TableCell>
+              <TableCell className="key__cell">{el.fields.House}</TableCell>
+              <TableCell className="key__cell">{el.fields.Frequency}</TableCell>
             </TableRow>
           );
         })}
