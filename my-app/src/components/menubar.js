@@ -23,7 +23,7 @@ export default function MenuBar() {
           <Toolbar>
             <Button variant="text" size="small" style={{ marginRight: 16 }}>
               <Link to="">
-                <h2>WILG Leaderboard</h2>
+                <h2>Leaderboard</h2>
               </Link>
             </Button>
             <Button variant="text" size="small" style={{ marginRight: 16 }}>
@@ -34,7 +34,7 @@ export default function MenuBar() {
 
             <Button variant="text" size="small" style={{ marginRight: 16 }}>
               <Link to="/descriptions">
-                <h4>Job Descriptions</h4>
+                <h4>Descriptions</h4>
               </Link>
             </Button>
             <Button variant="text" size="small" style={{ marginRight: 16 }}>
