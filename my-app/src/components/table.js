@@ -61,19 +61,11 @@ const PostTable = ({ data }) => {
                 {el.fields.BathroomJobs} / 4
               </TableCell>
 
-              <TableCell className="key__cell">{el.fields.FallHrs}</TableCell>
               <TableCell className="key__cell">
-                $
-                {(
-                  15 *
-                  (14 -
-                    el.fields.KitchenJobs +
-                    4 -
-                    el.fields.BathroomJobs +
-                    14 -
-                    el.fields.HouseJobs +
-                    el.fields.FallHrs)
-                ).toFixed(2)}
+                {el.fields.HrsOwed.toFixed(2)}
+              </TableCell>
+              <TableCell className="key__cell">
+                ${(15 * el.fields.HrsOwed).toFixed(2)}
               </TableCell>
             </TableRow>
           );
