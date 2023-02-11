@@ -26,6 +26,11 @@ export default function MenuBar() {
                 <h2>WILG Leaderboard</h2>
               </Link>
             </Button>
+            <Button variant="text" size="small" style={{ marginRight: 16 }}>
+              <a href="/assignments">
+                <h4>Assignments</h4>
+              </a>
+            </Button>
 
             <Button variant="text" size="small" style={{ marginRight: 16 }}>
               <Link to="/descriptions">
@@ -37,11 +42,7 @@ export default function MenuBar() {
                 <h4>Temporary Jobs</h4>
               </a>
             </Button>
-            <Button variant="text" size="small" style={{ marginRight: 16 }}>
-              <a href="/assignments">
-                <h4>Assignments</h4>
-              </a>
-            </Button>
+
             <div>
               <Button
                 variant="text"
