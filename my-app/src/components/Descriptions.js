@@ -14,12 +14,12 @@ import {
 import "./Content.css";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PriorityHighIcon from "@mui/icons-material/PriorityHigh";
-import useData2 from "./useData2";
+import useData from "./DescriptionsData";
 import SimpleAccordian from "./Accordian";
 import Background from "./nycbackgroundwithbunnies.svg";
 
 const Descriptions = () => {
-  const { data, getData } = useData2();
+  const { data, getData } = useData();
   useEffect(() => {
     async function onPageLoad() {
       await getData();
