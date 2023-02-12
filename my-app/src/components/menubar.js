@@ -15,6 +15,11 @@ export default function MenuBar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  const currentDate = new Date();
+  const startDate = new Date(currentDate.getFullYear(), 0, 1);
+  var days = Math.floor((currentDate - startDate) / (24 * 60 * 60 * 1000));
+
+  var weekNumber = Math.ceil(days / 7);
 
   return (
     <nav className="header">
@@ -79,6 +84,9 @@ export default function MenuBar() {
                 </MenuItem>
               </Menu>
             </div>
+            <span style={{ marginLeft: 64 }}>
+              <h5>Currently: Week {weekNumber - 5} of 14</h5>
+            </span>
           </Toolbar>
         </AppBar>
       </div>
