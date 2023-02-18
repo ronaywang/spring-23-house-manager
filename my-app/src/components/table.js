@@ -15,10 +15,6 @@ import {
 //import useData from "./useData";
 
 const PostTable = ({ data }) => {
-  const fields = data.map((el) => {
-    return el.fields;
-  });
-
   return (
     <Table className="key">
       <TableHead className="table-head">
@@ -35,7 +31,7 @@ const PostTable = ({ data }) => {
       <TableBody className="fullWidth">
         {data.map((el) => {
           return (
-            <TableRow key={el.fields.Ranking} className="key__row">
+            <TableRow className="key__row">
               <TableCell backgroundOrigin="content-box">
                 {el.fields.Name}
               </TableCell>
@@ -65,7 +61,17 @@ const PostTable = ({ data }) => {
                 {el.fields.HrsOwed.toFixed(2)}
               </TableCell>
               <TableCell className="key__cell">
-                ${(15 * el.fields.HrsOwed).toFixed(2)}
+                $
+                {(
+                  15 *
+                  ((Math.floor(el.fields.HrsOwed / 3) *
+                    (Math.floor(el.fields.HrsOwed / 3) + 1)) /
+                    2 +
+                    (el.fields.HrsOwed / 3 -
+                      Math.floor(el.fields.HrsOwed / 3)) *
+                      Math.floor(el.fields.HrsOwed / 3) *
+                      3)
+                ).toFixed(2)}
               </TableCell>
             </TableRow>
           );
