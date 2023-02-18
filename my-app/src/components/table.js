@@ -63,14 +63,13 @@ const PostTable = ({ data }) => {
               <TableCell className="key__cell">
                 $
                 {(
-                  15 *
+                  45 *
                   ((Math.floor(el.fields.HrsOwed / 3) *
                     (Math.floor(el.fields.HrsOwed / 3) + 1)) /
                     2 +
                     (el.fields.HrsOwed / 3 -
                       Math.floor(el.fields.HrsOwed / 3)) *
-                      Math.floor(el.fields.HrsOwed / 3) *
-                      3)
+                      Math.floor(el.fields.HrsOwed / 3))
                 ).toFixed(2)}
               </TableCell>
             </TableRow>
