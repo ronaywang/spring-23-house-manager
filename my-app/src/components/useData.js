@@ -10,7 +10,7 @@ export default function useData() {
   const getData = async () => {
     return base("Tracker")
       .select({
-        sort: [{ field: "HrsOwed", direction: "desc" }],
+        sort: [{ field: "HrsOwed", direction: "asc" }],
         pageSize: 100,
       })
       .firstPage(function (err, records) {
